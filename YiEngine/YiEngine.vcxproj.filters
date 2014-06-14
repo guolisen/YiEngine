@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{8dc4de9c-c96a-4052-bd76-048f4b4205e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{67fc9264-f940-4ea7-af5a-eedc2881a121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DateTime">
+      <UniqueIdentifier>{71095d1f-6af4-4387-a5b2-41d6f1a78909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SixYao">
+      <UniqueIdentifier>{b4d2eb73-498d-4bf4-a3fb-c1e464a33990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\DateTime">
+      <UniqueIdentifier>{315b9373-0c1d-442c-9385-905ed89df741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\SixYao">
+      <UniqueIdentifier>{e4c2daf4-7314-472c-8468-04a15ec5857f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Include\YiEngine\YiEngine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\JulianDay.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\DateTime.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\DateTimeFactory.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SixYao\SixYao.h">
+      <Filter>SixYao</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SixYao\SixYaoFactory.h">
+      <Filter>SixYao</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\LunarDay.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\Month.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\PublicDay.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\StarCalendar.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\MoonCalculate.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\DayFactory.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\IDayBuilder.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\Coordinate.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Include\YiEngine\DateTime\DataTranslator.hpp">
+      <Filter>Include\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Include\YiEngine\DateTime\DateTimeCommonDef.h">
+      <Filter>Include\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Include\YiEngine\DateTime\DayInfoDef.h">
+      <Filter>Include\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Include\YiEngine\DateTime\IDateTime.h">
+      <Filter>Include\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Include\YiEngine\DateTime\IDateTimeFactory.h">
+      <Filter>Include\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Include\YiEngine\SixYao\ISixYao.h">
+      <Filter>Include\SixYao</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Include\YiEngine\SixYao\ISixYaoFactory.h">
+      <Filter>Include\SixYao</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DateTime\TimeInfo.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Common\YiEngine.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Test\YiEngineMain.cpp" />
+    <ClCompile Include="..\src\DateTime\JulianDay.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DateTime\DateTime.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DateTime\DateTimeFactory.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SixYao\SixYao.cpp">
+      <Filter>SixYao</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SixYao\SixYaoFactory.cpp">
+      <Filter>SixYao</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DateTime\LunarDay.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DateTime\Month.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DateTime\PublicDay.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DateTime\StarCalendar.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DateTime\MoonCalculate.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DateTime\DayFactory.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DateTime\Coordinate.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DateTime\TimeInfo.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

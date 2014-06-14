@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9DF49F5B-3F1B-419A-B95C-1E4C704C836A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>YiEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\code\boost_1_55_0\;../src/Include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\DateTime\Coordinate.h" />
+    <ClInclude Include="..\src\DateTime\DateTime.h" />
+    <ClInclude Include="..\src\DateTime\DateTimeFactory.h" />
+    <ClInclude Include="..\src\DateTime\DayFactory.h" />
+    <ClInclude Include="..\src\DateTime\IDayBuilder.h" />
+    <ClInclude Include="..\src\DateTime\JulianDay.h" />
+    <ClInclude Include="..\src\DateTime\LunarDay.h" />
+    <ClInclude Include="..\src\DateTime\Month.h" />
+    <ClInclude Include="..\src\DateTime\MoonCalculate.h" />
+    <ClInclude Include="..\src\DateTime\PublicDay.h" />
+    <ClInclude Include="..\src\DateTime\StarCalendar.h" />
+    <ClInclude Include="..\src\DateTime\TimeInfo.h" />
+    <ClInclude Include="..\src\Include\YiEngine\DateTime\DataTranslator.hpp" />
+    <ClInclude Include="..\src\Include\YiEngine\DateTime\DateTimeCommonDef.h" />
+    <ClInclude Include="..\src\Include\YiEngine\DateTime\DayInfoDef.h" />
+    <ClInclude Include="..\src\Include\YiEngine\DateTime\IDateTime.h" />
+    <ClInclude Include="..\src\Include\YiEngine\DateTime\IDateTimeFactory.h" />
+    <ClInclude Include="..\src\Include\YiEngine\SixYao\ISixYao.h" />
+    <ClInclude Include="..\src\Include\YiEngine\SixYao\ISixYaoFactory.h" />
+    <ClInclude Include="..\src\Include\YiEngine\YiEngine.h" />
+    <ClInclude Include="..\src\SixYao\SixYao.h" />
+    <ClInclude Include="..\src\SixYao\SixYaoFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Common\YiEngine.cpp" />
+    <ClCompile Include="..\src\DateTime\Coordinate.cpp" />
+    <ClCompile Include="..\src\DateTime\DateTime.cpp" />
+    <ClCompile Include="..\src\DateTime\DateTimeFactory.cpp" />
+    <ClCompile Include="..\src\DateTime\DayFactory.cpp" />
+    <ClCompile Include="..\src\DateTime\JulianDay.cpp" />
+    <ClCompile Include="..\src\DateTime\LunarDay.cpp" />
+    <ClCompile Include="..\src\DateTime\Month.cpp" />
+    <ClCompile Include="..\src\DateTime\MoonCalculate.cpp" />
+    <ClCompile Include="..\src\DateTime\PublicDay.cpp" />
+    <ClCompile Include="..\src\DateTime\StarCalendar.cpp" />
+    <ClCompile Include="..\src\DateTime\TimeInfo.cpp" />
+    <ClCompile Include="..\src\SixYao\SixYao.cpp" />
+    <ClCompile Include="..\src\SixYao\SixYaoFactory.cpp" />
+    <ClCompile Include="..\src\Test\YiEngineMain.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
